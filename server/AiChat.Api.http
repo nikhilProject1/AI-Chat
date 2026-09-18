@@ -1,0 +1,14 @@
+@AiChatApi_HostAddress = http://localhost:5000
+
+GET {{AiChatApi_HostAddress}}/api/conversations
+Accept: application/json
+
+###
+
+POST {{AiChatApi_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "conversationId": null,
+  "message": "Explain RAG in simple terms."
+}
